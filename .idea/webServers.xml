@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3de459c5-d55c-4e08-8dc6-f658096afe7d" name="filmy (onebit)" url="http://filmy.spuntanela.cz">
+        <fileTransfer host="ftp.spuntanela.cz" port="21" rootFolder="/filmy">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

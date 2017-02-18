@@ -1,0 +1,34 @@
+{block content}
+    <h1 n:block="title">Seznam filmů ({$countPost})</h1>
+    {control visualPaginator}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Název filmu</th>
+                <th>Kategorie</th>
+                <th>Rok výroby</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        {foreach $posts as $post}
+            <tr>
+                <td><a n:href="Post:show $post->id">{$post->title}</a></td>
+                <td>{$post->name}</td>
+                <td>{$post->year}</td>
+                <td>
+                    <a n:href="Post:edit $post->id" n:if="$user->loggedIn" class="btn btn-primary btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a n:if="$user->loggedIn" n:href="delete! $post->id" class="btn btn-xs btn-warning" data-toggle="confirmation"
+                       data-title="Opravdu smazat ?" data-btn-ok-label="Ano" data-btn-cancel-label="Ne"><i class="fa fa-trash" aria-hidden="true"></i> Smazat</a>
+                    <a href="http://www.csfd.cz/film/{$post->csfd_id}" target="_blank" class="btn btn-danger btn-xs">Čsfd <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+        {/foreach}
+
+        </tbody>
+    </table>
+
+    <!-- Stránkování začátek -->
+    {control visualPaginator}
+    <!-- Stránkování konec -->
+{/block}

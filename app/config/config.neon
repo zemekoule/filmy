@@ -1,0 +1,25 @@
+parameters:
+
+
+application:
+	errorPresenter: Front:Error
+
+session:
+	expiration: 14 days
+
+
+services:
+	router: App\RouterFactory::createRouter
+	- App\Model\ArticleManager
+	- App\Model\CategoryManager
+	- App\Model\CommentManager
+
+security:
+    users:
+        admin: konvalinka  # user 'admin', password 'konvalinka'
+
+tracy:
+    email: jaroslav.maly@play-hracky.cz
+
+extensions:
+    visualPaginator: IPub\VisualPaginator\DI\VisualPaginatorExtension

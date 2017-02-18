@@ -1,0 +1,19 @@
+<ul class="pagination pagination-sm">
+    {if $page > 1}
+        <li><a href="{plink this  $page-1, $find}">&laquo;</a></li>
+    {else}
+        <li class="disabled"><a href="#">&laquo;</a></li>
+    {/if}
+    {for $i = $pageFrom ; $i <= $pageTo; $i++}
+        {if $i == $page}
+            <li class="active"><a href="#">{$i}</a></li>
+        {else}
+            <li><a href="{plink Homepage:default $i,$find}">{$i}</a></li>
+        {/if}
+    {/for}
+    {if $page < $pageTotal}
+        <li><a href="{plink Homepage:default $page+1,$find}">&raquo;</a></li>
+    {else}
+        <li class="disabled"><a href="#">&raquo;</a></li>
+    {/if}
+</ul>
