@@ -13,41 +13,9 @@ class CsfdPresenter extends BasePresenter
 
     public function __construct(Nette\Database\Context $database)
     {
+        parent::__construct();
         $this->database = $database;
     }
-
-    protected function form() {
-        $form = new Form;
-
-        $renderer = $form->getRenderer();
-        $renderer->wrappers['controls']['container'] = NULL;
-        $renderer->wrappers['pair']['container'] = 'div class=form-group';
-        $renderer->wrappers['pair']['.error'] = 'has-error';
-        $renderer->wrappers['control']['container'] = 'div class=col-sm-8';
-        $renderer->wrappers['label']['container'] = 'div class="col-sm-2 control-label"';
-        $renderer->wrappers['control']['description'] = 'span class=help-block';
-        $renderer->wrappers['control']['errorcontainer'] = 'span class=help-block';
-// make form and controls compatible with Twitter Bootstrap
-        $form->getElementPrototype()
-            ->class('form-horizontal page-form')
-            ->role('form');
-
-        $form->onRender[] = function ($form) {
-            foreach ($form->getControls() as $control) {
-                $type = $control->getOption('type');
-                if ($type === 'button') {
-                    $control->getControlPrototype()->addClass('btn btn-primary');
-                    $usedPrimary = TRUE;
-                } elseif (in_array($type, ['text', 'textarea', 'select'], TRUE)) {
-                    $control->getControlPrototype()->addClass('form-control');
-                } elseif (in_array($type, ['checkbox', 'radio'], TRUE)) {
-                    $control->getSeparatorPrototype()->setName('div')->addClass($type);
-                }
-            }
-        };
-        return $form;
-    }
-
 
     /**
      * Vyhledá na serveru ČSFD filmy podle zadaného řetězce

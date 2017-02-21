@@ -18,12 +18,41 @@ class RouterFactory
 	{
 		$router = new RouteList;
 
+		/*
         $router[] = new Route('<presenter>/<action>/[/<id>]', array(
             'module' => 'Front',
             'presenter' => 'Homepage',
             'action' => 'default',
             'id' => NULL,
         ));
+        */
+
+        $router[] = new Route('<presenter>/<action>[/<postId>]', [
+            'module' => 'Front',
+            'presenter' => [
+                Route::VALUE => 'Homepage',
+                Route::FILTER_TABLE => [
+                    // řetězec v URL => presenter
+                    'ucet' => 'Sign',
+                    'clanek' => 'Post',
+                    'stitek' => 'Tags',
+                    'stranka' => 'page',
+                ],
+            ],
+            'action' => [
+                Route::VALUE => 'default',
+                Route::FILTER_TABLE => [
+                    // řetězec v URL => presenter
+                    'prihlasit' => 'in',
+                    'odhlasit' => 'out',
+                    'hledat' => 'find',
+                    'novy' => 'create',
+                    'upravit' => 'edit',
+                    'stranka' => 'page',
+                ],
+            ],
+            'postId' => NULL,
+        ]);
 
 		return $router;
 	}

@@ -13,6 +13,7 @@ services:
 	- App\Model\ArticleManager
 	- App\Model\CategoryManager
 	- App\Model\CommentManager
+	- App\Model\TagsManager
 
 security:
     users:

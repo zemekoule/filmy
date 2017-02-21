@@ -36,6 +36,9 @@ class HomepagePresenter extends BasePresenter
     public function renderDefault($page = 1,$find = null, $sort= null)
     {
 
+
+        echo 'Heslo: '.password_hash('konvalinka', PASSWORD_DEFAULT)."\n";
+
         $paginator = new Nette\Utils\Paginator;
 
         $paginator->setItemsPerPage(30); // počet položek na stránce

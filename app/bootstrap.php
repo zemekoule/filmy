@@ -2,8 +2,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Nette\Application\Routers\RouteList;
-use Nette\Application\Routers\Route;
+//use Nette\Application\Routers\RouteList;
+//use Nette\Application\Routers\Route;
 
 $configurator = new Nette\Configurator;
 
@@ -27,11 +27,11 @@ if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
     $configurator->addConfig(__DIR__ . '/config/config.production.neon');
 }
 
-$router = new RouteList;
+//$router = new RouteList;
 //$router[] = new Route('article/<id>', 'Article:view');
 //$router[] = new Route('rss.xml', 'Feed:rss');
 //$router[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
-
+/*
 $router[] = new Route('<presenter>/<action>[/<postId>]', [
     'module' => 'Front',
     'presenter' => [
@@ -57,11 +57,11 @@ $router[] = new Route('<presenter>/<action>[/<postId>]', [
     ],
     'postId' => NULL,
 ]);
-
+*/
 //$router[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
 
 
-$container = $configurator->createContainer();
-$container->addService('router', $router);
+return  $configurator->createContainer();
+//$container->addService('router', $router);
 
-return $container;
+//return $container;

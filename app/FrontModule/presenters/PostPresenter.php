@@ -3,8 +3,6 @@ namespace FrontModule;
 
 
 use Nette;
-use Nette\Application\UI\Form;
-
 
 class PostPresenter extends BasePresenter
 {
@@ -21,42 +19,15 @@ class PostPresenter extends BasePresenter
      */
     public $CommentManger;
 
+    /**
+     * @var \App\Model\TagsManager @inject
+     */
+    public $TagsManager;
+
     public function __construct(Nette\Database\Context $database)
     {
         parent::__construct();
         $this->database = $database;
-    }
-
-    protected function form() {
-        $form = new Form;
-
-        $renderer = $form->getRenderer();
-        $renderer->wrappers['controls']['container'] = NULL;
-        $renderer->wrappers['pair']['container'] = 'div class=form-group';
-        $renderer->wrappers['pair']['.error'] = 'has-error';
-        $renderer->wrappers['control']['container'] = 'div class=col-sm-10';
-        $renderer->wrappers['label']['container'] = 'div class="col-sm-2 control-label"';
-        $renderer->wrappers['control']['description'] = 'span class=help-block';
-        $renderer->wrappers['control']['errorcontainer'] = 'span class=help-block';
-// make form and controls compatible with Twitter Bootstrap
-        $form->getElementPrototype()
-            ->class('form-horizontal page-form')
-            ->role('form');
-
-        $form->onRender[] = function ($form) {
-            foreach ($form->getControls() as $control) {
-                $type = $control->getOption('type');
-                if ($type === 'button') {
-                    $control->getControlPrototype()->addClass('btn btn-primary');
-                    $usedPrimary = TRUE;
-                } elseif (in_array($type, ['text', 'textarea', 'select'], TRUE)) {
-                    $control->getControlPrototype()->addClass('form-control');
-                } elseif (in_array($type, ['checkbox', 'radio'], TRUE)) {
-                    $control->getSeparatorPrototype()->setName('div')->addClass($type);
-                }
-            }
-        };
-        return $form;
     }
 
     public function renderShow($postId)
@@ -124,6 +95,13 @@ class PostPresenter extends BasePresenter
         $form->addSelect('category', 'Kategorie:', $select)
             ->setPrompt('Zvolte kategorii')
             ->setRequired("Zadejte kategorii");
+
+
+        $gengre = $this->TagsManager->getTags()->fetchPairs('id','name');
+
+        $form->addCheckboxList('gengre', 'Žánr:', $gengre)
+            ->setRequired('Zadejte alespoň jeden žánr.');
+
         $form->addText('year','Rok')
             ->setRequired('Rok výroby je potřeba vyplnit');
         $form->addText('csfd_id','Id ČSFD');
@@ -140,14 +118,50 @@ class PostPresenter extends BasePresenter
         if (!$this->getUser()->isLoggedIn()) {
             $this->error('Pro vytvoření, nebo editování příspěvku se musíte přihlásit.');
         }
-
+        //bdump($values->gengre);
         $postId = $this->getParameter('postId');
+        //$id = $this-> getQuery('id'); // vrací GET parametr 'id' (nebo NULL)
 
         if ($postId) {
             $post = $this->database->table('posts')->get($postId);
-            $post->update($values);
+            $post->update([
+                'title' => $values->title,
+                'category' => $values->category,
+                'year' => $values->year,
+                'csfd_id' => $values->csfd_id,
+                'content' => $values->content
+            ]);
+
+            // aktualizace štítků
+            $tags = $this->TagsManager->getTagsPost($postId)->fetchPairs('id','tag_id');
+            // přidání štítků
+            $tagsAdd = array_diff($values->gengre, $tags);
+            bdump($tagsAdd, 'štítky pro přidání');
+            foreach ($tagsAdd as $item) {
+                $this->TagsManager->insertPostTags(['post_id' => $postId, 'tag_id' => $item]);
+            }
+            $tagsDelete = array_diff($tags, $values->gengre);
+            foreach ($tagsDelete as $key=>$item) {
+               $this->TagsManager->deleteTagPostById($key);
+            }
+            bdump($tagsDelete, 'štítky pro smazání');
+
+
         } else {
-            $post = $this->database->table('posts')->insert($values);
+            $post = $this->database->table('posts')->insert([
+                'title' => $values->title,
+                'category' => $values->category,
+                'year' => $values->year,
+                'csfd_id' => $values->csfd_id,
+                'content' => $values->content
+            ]);
+
+            $lastId = $post->getPrimary();
+            foreach ($values->gengre as $item) {
+                $this->TagsManager->insertPostTags(['post_id' => $lastId, 'tag_id' => $item]);
+            }
+
+
         }
 
         $this->flashMessage('Film: '.$post->title.' ('.$post->year.') byl úspěšně uložen.', 'success');
@@ -164,10 +178,21 @@ class PostPresenter extends BasePresenter
         }
 
         $post = $this->database->table('posts')->get($postId);
+
         if (!$post) {
             $this->error('Příspěvek nebyl nalezen');
         }
-        $this['postForm']->setDefaults($post->toArray());
+
+        $tags = $this->TagsManager->getTagsPost($postId)->fetchPairs('id','tag_id');
+
+        $this['postForm']->setDefaults([
+            'title' => $post->title,
+            'category' => $post->category,
+            'year' => $post->year,
+            'csfd_id' => $post->csfd_id,
+            'content' => $post->content,
+            'gengre' => $tags
+        ]);
     }
 
     public function actionCreate($title, $rok, $csfd= null)
@@ -182,12 +207,25 @@ class PostPresenter extends BasePresenter
             $xml = simplexml_load_string($tmp);
 
             if (isset($xml)) {
+                $zanryItems = [];
                 $this->image = $xml->obrazek;
+                if (count($xml->zanry->zanr) > 0) {
+
+                    foreach ($xml->zanry->zanr as $item) {
+                        $gengreImport = $this->TagsManager->getTagIdByName(trim($item))->fetchField();
+                        if ($gengreImport) {
+                            $zanryItems[] = $gengreImport;
+                        }
+                    }
+                    bdump($zanryItems,'seznam žánrů');
+                }
+                bdump(count($xml->zanry->zanr),'žánry');
                 $this['postForm']->setDefaults([
                     'title' => $xml->nazev,
                     "year" => $xml->rok,
                     'csfd_id' => $xml->id,
-                    'content' => $xml->obsah
+                    'content' => $xml->obsah,
+                    'gengre' => $zanryItems
                 ]);
             }
 
