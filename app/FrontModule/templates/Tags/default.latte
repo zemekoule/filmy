@@ -1,0 +1,31 @@
+{block content}
+    <h1 n:block="title">Štítky filmů</h1>
+    {control visualPaginator}
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Název</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {foreach $tags as $tag}
+            <tr>
+                <td>{$tag->id}</td>
+                <td>{$tag->name}</td>
+                <td>
+                    <a n:href="Tags:edit $tag->id" n:if="$user->loggedIn" class="btn btn-primary btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a n:if="$user->loggedIn" n:href="delete! $tag->id" class="btn btn-xs btn-warning" data-toggle="confirmation"
+                                                                         data-title="Opravdu smazat ?" data-btn-ok-label="Ano" data-btn-cancel-label="Ne"><i class="fa fa-trash" aria-hidden="true"></i> Smazat</a>
+                </td>
+            </tr>
+        {/foreach}
+
+        </tbody>
+    </table>
+
+    <!-- Stránkování začátek -->
+    {control visualPaginator}
+    <!-- Stránkování konec -->
+{/block}
