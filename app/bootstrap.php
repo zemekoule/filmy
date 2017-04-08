@@ -21,7 +21,7 @@ $configurator->createRobotLoader()
 $configurator->addConfig(__DIR__ . '/config/config.neon');
 //$configurator->addConfig(__DIR__ . '/config/config.local.neon');
 
-if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+if (strpos($_SERVER['HTTP_HOST'], 'local.filmy.spuntanela.cz') !== false) {
     $configurator->addConfig(__DIR__ . '/config/config.local.neon');
 } else {
     $configurator->addConfig(__DIR__ . '/config/config.production.neon');

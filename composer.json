@@ -19,9 +19,7 @@
 		"nette/utils": "^2.4",
 		"latte/latte": "^2.4",
 		"tracy/tracy": "^2.4",
-		"ipub/data-tables": "dev-master",
 		"ipub/visual-paginator": "v1.0.3",
-		"nextras/orm": "v2.2.1",
 		"nextras/secured-links": "^1.4"
 	},
 	"require-dev": {

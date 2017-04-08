@@ -1,1 +1,5 @@
 app/config/config.local.neon
+.idea/*
+www/css/bootstrap-multiselect.css
+www/js/bootstrap-multiselect.js
+!.gitignore

@@ -4,7 +4,11 @@
 <a n:href="edit $post->id" n:if="$user->loggedIn">Upravit film</a>
 
 <h1 n:block="title">{$post->title}</h1>
-
+<div>
+{foreach $post->related('post_tag') as $tag}
+    {$tag->tag->name}{sep},{/sep}
+{/foreach}
+</div>
 <div class="post">{$post->content}</div>
 <hr>
 <h4>Vložte nový komenář</h4>

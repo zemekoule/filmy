@@ -11,6 +11,7 @@ use Nette\Application\UI\Presenter;
  * @package FrontModule
  *
  */
+
 abstract class BasePresenter extends Presenter
 {
     use \Nextras\Application\UI\SecuredLinksPresenterTrait;
@@ -19,6 +20,7 @@ abstract class BasePresenter extends Presenter
         $form = new Form;
 
         $renderer = $form->getRenderer();
+
         $renderer->wrappers['controls']['container'] = NULL;
         $renderer->wrappers['pair']['container'] = 'div class=form-group';
         $renderer->wrappers['pair']['.error'] = 'has-error';

@@ -33,15 +33,14 @@ class PostPresenter extends BasePresenter
     public function renderShow($postId)
     {
 
-        $post = $this->database->table('posts')->get($postId);
+        $post = $this->database->table('post')->get($postId);
         if (!$post) {
             $this->error('Stránka nebyla nalezena');
         }
-
+		bdump($post);
         $this->template->post = $post;
-        $this->template->comments = $post->related('comment')->order('created_at');
-
-    }
+		$this->template->comments = $post->related('comment')->order('created_at');
+	}
 
     public function renderCreate()
     {
@@ -123,7 +122,7 @@ class PostPresenter extends BasePresenter
         //$id = $this-> getQuery('id'); // vrací GET parametr 'id' (nebo NULL)
 
         if ($postId) {
-            $post = $this->database->table('posts')->get($postId);
+            $post = $this->database->table('post')->get($postId);
             $post->update([
                 'title' => $values->title,
                 'category' => $values->category,
@@ -148,7 +147,7 @@ class PostPresenter extends BasePresenter
 
 
         } else {
-            $post = $this->database->table('posts')->insert([
+            $post = $this->database->table('post')->insert([
                 'title' => $values->title,
                 'category' => $values->category,
                 'year' => $values->year,
@@ -177,7 +176,7 @@ class PostPresenter extends BasePresenter
             $this->redirect('Sign:in');
         }
 
-        $post = $this->database->table('posts')->get($postId);
+        $post = $this->database->table('post')->get($postId);
 
         if (!$post) {
             $this->error('Příspěvek nebyl nalezen');
