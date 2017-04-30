@@ -34,9 +34,9 @@ abstract class Component extends Nette\ComponentModel\Container implements ISign
 	 * @param  bool   throw exception if presenter doesn't exist?
 	 * @return Presenter|NULL
 	 */
-	public function getPresenter($need = TRUE)
+	public function getPresenter($throw = TRUE)
 	{
-		return $this->lookup(Presenter::class, $need);
+		return $this->lookup(Presenter::class, $throw);
 	}
 
 
@@ -154,7 +154,7 @@ abstract class Component extends Nette\ComponentModel\Container implements ISign
 	 * @param  ComponentReflection (internal, used by Presenter)
 	 * @return void
 	 */
-	public function saveState(array & $params, $reflection = NULL)
+	public function saveState(array &$params, $reflection = NULL)
 	{
 		$reflection = $reflection === NULL ? $this->getReflection() : $reflection;
 		foreach ($reflection->getPersistentParams() as $name => $meta) {
@@ -371,7 +371,10 @@ abstract class Component extends Nette\ComponentModel\Container implements ISign
 	{
 		$args = func_num_args() < 3 && is_array($args) ? $args : array_slice(func_get_args(), 1);
 		$presenter = $this->getPresenter();
-		$presenter->redirectUrl($presenter->createRequest($this, $destination, $args, 'redirect'), 301);
+		$presenter->redirectUrl(
+			$presenter->createRequest($this, $destination, $args, 'redirect'),
+			Nette\Http\IResponse::S301_MOVED_PERMANENTLY
+		);
 	}
 
 

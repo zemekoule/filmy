@@ -33,6 +33,9 @@ class Compiler
 	/** @var string */
 	private $className = 'Container';
 
+	/** @var string[] */
+	private $dynamicParams = [];
+
 	/** @var array reserved section names */
 	private static $reserved = ['services' => 1, 'parameters' => 1];
 
@@ -46,11 +49,14 @@ class Compiler
 
 	/**
 	 * Add custom configurator extension.
-	 * @return self
+	 * @param  string|NULL
+	 * @return static
 	 */
 	public function addExtension($name, CompilerExtension $extension)
 	{
-		if (isset($this->extensions[$name]) || isset(self::$reserved[$name])) {
+		if ($name === NULL) {
+			$name = '_' . count($this->extensions);
+		} elseif (isset($this->extensions[$name]) || isset(self::$reserved[$name])) {
 			throw new Nette\InvalidArgumentException("Name '$name' is already used or reserved.");
 		}
 		$this->extensions[$name] = $extension->setCompiler($this, $name);
@@ -79,7 +85,7 @@ class Compiler
 
 
 	/**
-	 * @return self
+	 * @return static
 	 */
 	public function setClassName($className)
 	{
@@ -90,7 +96,7 @@ class Compiler
 
 	/**
 	 * Adds new configuration.
-	 * @return self
+	 * @return static
 	 */
 	public function addConfig(array $config)
 	{
@@ -101,7 +107,7 @@ class Compiler
 
 	/**
 	 * Adds new configuration from file.
-	 * @return self
+	 * @return static
 	 */
 	public function loadConfig($file)
 	{
@@ -123,9 +129,20 @@ class Compiler
 
 
 	/**
+	 * Sets the names of dynamic parameters.
+	 * @return static
+	 */
+	public function setDynamicParameterNames(array $names)
+	{
+		$this->dynamicParams = $names;
+		return $this;
+	}
+
+
+	/**
 	 * Adds dependencies to the list.
 	 * @param  array of ReflectionClass|\ReflectionFunctionAbstract|string
-	 * @return self
+	 * @return static
 	 */
 	public function addDependencies(array $deps)
 	{
@@ -147,7 +164,7 @@ class Compiler
 	/**
 	 * @return string
 	 */
-	public function compile(array $config = NULL, $className = NULL, $parentName = NULL)
+	public function compile()
 	{
 		if (func_num_args()) {
 			trigger_error(__METHOD__ . ' arguments are deprecated, use Compiler::addConfig() and Compiler::setClassName().', E_USER_DEPRECATED);
@@ -165,9 +182,13 @@ class Compiler
 	/** @internal */
 	public function processParameters()
 	{
-		if (isset($this->config['parameters'])) {
-			$this->builder->parameters = Helpers::expand($this->config['parameters'], $this->config['parameters'], TRUE);
+		$params = isset($this->config['parameters']) ? $this->config['parameters'] : [];
+		foreach ($this->dynamicParams as $key) {
+			$params[$key] = array_key_exists($key, $params)
+				? ContainerBuilder::literal('isset($this->parameters[?]) \? $this->parameters[?] : ?', [$key, $key, $params[$key]])
+				: ContainerBuilder::literal('$this->parameters[?]', [$key]);
 		}
+		$this->builder->parameters = Helpers::expand($params, $params, TRUE);
 	}
 
 
@@ -263,14 +284,16 @@ class Compiler
 					throw new ServiceCreationException("Circular reference detected for service '$name'.");
 				}
 			}
-			$depths[$name] = count($path);
+			$depths[$name] = count($path) + preg_match('#^@[\w\\\\]+\z#', $name);
 		}
 		array_multisort($depths, $services);
 
 		foreach ($services as $name => $def) {
-			if ((string) (int) $name === (string) $name) {
+			if (is_int($name)) {
 				$postfix = $def instanceof Statement && is_string($def->getEntity()) ? '.' . $def->getEntity() : (is_scalar($def) ? ".$def" : '');
 				$name = (count($builder->getDefinitions()) + 1) . preg_replace('#\W+#', '_', $postfix);
+			} elseif (preg_match('#^@[\w\\\\]+\z#', $name)) {
+				$name = $builder->getByType(substr($name, 1), TRUE);
 			} elseif ($namespace) {
 				$name = $namespace . '.' . $name;
 			}
@@ -292,8 +315,14 @@ class Compiler
 			}
 			$def = Helpers::expand($def, $params);
 
+			if (is_array($def) && !empty($def['alteration']) && !$builder->hasDefinition($name)) {
+				throw new ServiceCreationException("Service '$name': missing original definition for alteration.");
+			}
+
 			if (($parent = Config\Helpers::takeParent($def)) && $parent !== $name) {
-				trigger_error("Section inheritance $name < $parent is deprecated.", E_USER_DEPRECATED);
+				if ($parent !== Config\Helpers::OVERWRITE) {
+					trigger_error("Section inheritance $name < $parent is deprecated.", E_USER_DEPRECATED);
+				}
 				$builder->removeDefinition($name);
 				$definition = $builder->addDefinition(
 					$name,
@@ -339,7 +368,7 @@ class Compiler
 			unset($config['create']);
 		}
 
-		$known = ['class', 'factory', 'arguments', 'setup', 'autowired', 'dynamic', 'inject', 'parameters', 'implement', 'run', 'tags'];
+		$known = ['class', 'factory', 'arguments', 'setup', 'autowired', 'dynamic', 'inject', 'parameters', 'implement', 'run', 'tags', 'alteration'];
 		if ($error = array_diff(array_keys($config), $known)) {
 			$hints = array_filter(array_map(function ($error) use ($known) {
 				return Nette\Utils\ObjectMixin::getSuggestion($known, $error);

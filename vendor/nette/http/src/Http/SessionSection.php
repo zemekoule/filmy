@@ -47,22 +47,19 @@ class SessionSection implements \IteratorAggregate, \ArrayAccess
 	}
 
 
-	/**
-	 * Do not call directly. Use Session::getNamespace().
-	 */
 	private function start()
 	{
 		if ($this->meta === FALSE) {
 			$this->session->start();
-			$this->data = & $_SESSION['__NF']['DATA'][$this->name];
-			$this->meta = & $_SESSION['__NF']['META'][$this->name];
+			$this->data = &$_SESSION['__NF']['DATA'][$this->name];
+			$this->meta = &$_SESSION['__NF']['META'][$this->name];
 		}
 	}
 
 
 	/**
 	 * Returns an iterator over all section variables.
-	 * @return \ArrayIterator
+	 * @return \Iterator
 	 */
 	public function getIterator()
 	{

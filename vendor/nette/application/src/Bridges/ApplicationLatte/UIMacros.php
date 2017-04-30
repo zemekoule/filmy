@@ -21,6 +21,7 @@ use Nette\Utils\Strings;
  * - {link destination ...} control link
  * - {plink destination ...} presenter link
  * - {snippet ?} ... {/snippet ?} control snippet
+ * - n:nonce
  */
 class UIMacros extends Latte\Macros\MacroSet
 {
@@ -41,6 +42,7 @@ class UIMacros extends Latte\Macros\MacroSet
 		$me->addMacro('ifCurrent', [$me, 'macroIfCurrent'], '}'); // deprecated; use n:class="$presenter->linkCurrent ? ..."
 		$me->addMacro('extends', [$me, 'macroExtends']);
 		$me->addMacro('layout', [$me, 'macroExtends']);
+		$me->addMacro('nonce', NULL, NULL, 'echo $this->global->uiNonce ? " nonce=\"{$this->global->uiNonce}\"" : "";');
 	}
 
 
@@ -112,7 +114,7 @@ class UIMacros extends Latte\Macros\MacroSet
 	public function macroLink(MacroNode $node, PhpWriter $writer)
 	{
 		$node->modifiers = preg_replace('#\|safeurl\s*(?=\||\z)#i', '', $node->modifiers);
-		return $writer->using($node, $this->getCompiler())
+		return $writer->using($node)
 			->write('echo %escape(%modify('
 				. ($node->name === 'plink' ? '$this->global->uiPresenter' : '$this->global->uiControl')
 				. '->link(%node.word, %node.array?)))'

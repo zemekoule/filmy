@@ -4,7 +4,6 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/ipub/data-tables" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ipub/visual-paginator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/latte/latte" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/application" />
@@ -23,25 +22,12 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/robot-loader" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/security" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/tester" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/nette/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/utils" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/nextras/dbal" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/nextras/orm" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nextras/secured-links" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tracy/tracy" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP Runtime" type="php">
-        <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
-        </CLASSES>
-        <SOURCES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="module-library">
       <library name="PHARS">
         <CLASSES>
@@ -56,7 +42,6 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/ipub/data-tables" />
           <root url="file://$MODULE_DIR$/vendor/ipub/visual-paginator" />
           <root url="file://$MODULE_DIR$/vendor/latte/latte" />
           <root url="file://$MODULE_DIR$/vendor/nette/application" />
@@ -75,16 +60,12 @@
           <root url="file://$MODULE_DIR$/vendor/nette/robot-loader" />
           <root url="file://$MODULE_DIR$/vendor/nette/security" />
           <root url="file://$MODULE_DIR$/vendor/nette/tester" />
-          <root url="file://$MODULE_DIR$/vendor/nette/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
-          <root url="file://$MODULE_DIR$/vendor/nextras/dbal" />
-          <root url="file://$MODULE_DIR$/vendor/nextras/orm" />
           <root url="file://$MODULE_DIR$/vendor/nextras/secured-links" />
           <root url="file://$MODULE_DIR$/vendor/tracy/tracy" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
-          <root url="file://$MODULE_DIR$/vendor/ipub/data-tables" />
           <root url="file://$MODULE_DIR$/vendor/ipub/visual-paginator" />
           <root url="file://$MODULE_DIR$/vendor/latte/latte" />
           <root url="file://$MODULE_DIR$/vendor/nette/application" />
@@ -103,10 +84,7 @@
           <root url="file://$MODULE_DIR$/vendor/nette/robot-loader" />
           <root url="file://$MODULE_DIR$/vendor/nette/security" />
           <root url="file://$MODULE_DIR$/vendor/nette/tester" />
-          <root url="file://$MODULE_DIR$/vendor/nette/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/nette/utils" />
-          <root url="file://$MODULE_DIR$/vendor/nextras/dbal" />
-          <root url="file://$MODULE_DIR$/vendor/nextras/orm" />
           <root url="file://$MODULE_DIR$/vendor/nextras/secured-links" />
           <root url="file://$MODULE_DIR$/vendor/tracy/tracy" />
         </SOURCES>

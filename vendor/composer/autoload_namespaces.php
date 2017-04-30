@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'IPub\\VisualPaginator\\' => array($vendorDir . '/ipub/visual-paginator/src'),
-    'IPub\\DataTables\\' => array($vendorDir . '/ipub/data-tables/src'),
 );

@@ -84,7 +84,7 @@ class Session
 
 		try {
 			// session_start returns FALSE on failure only sometimes
-			Nette\Utils\Callback::invokeSafe('session_start', [], function ($message) use (& $e) {
+			Nette\Utils\Callback::invokeSafe('session_start', [], function ($message) use (&$e) {
 				$e = new Nette\InvalidStateException($message);
 			});
 		} catch (\Exception $e) {
@@ -102,7 +102,7 @@ class Session
 				DATA: section->variable = data
 				META: section->variable = Timestamp
 		*/
-		$nf = & $_SESSION['__NF'];
+		$nf = &$_SESSION['__NF'];
 
 		if (!is_array($nf)) {
 			$nf = [];
@@ -293,7 +293,7 @@ class Session
 
 	/**
 	 * Iteration over all sections.
-	 * @return \ArrayIterator
+	 * @return \Iterator
 	 */
 	public function getIterator()
 	{
@@ -321,7 +321,7 @@ class Session
 			return;
 		}
 
-		$nf = & $_SESSION['__NF'];
+		$nf = &$_SESSION['__NF'];
 		if (isset($nf['META']) && is_array($nf['META'])) {
 			foreach ($nf['META'] as $name => $foo) {
 				if (empty($nf['META'][$name])) {
@@ -352,11 +352,19 @@ class Session
 	 */
 	public function setOptions(array $options)
 	{
-		if (self::$started) {
-			$this->configure($options);
+		$normalized = [];
+		foreach ($options as $key => $value) {
+			if (!strncmp($key, 'session.', 8)) { // back compatibility
+				$key = substr($key, 8);
+			}
+			$key = strtolower(preg_replace('#(.)(?=[A-Z])#', '$1_', $key)); // camelCase -> snake_case
+			$normalized[$key] = $value;
 		}
-		$this->options = $options + $this->options;
-		if (!empty($options['auto_start'])) {
+		if (self::$started) {
+			$this->configure($normalized);
+		}
+		$this->options = $normalized + $this->options;
+		if (!empty($normalized['auto_start'])) {
 			$this->start();
 		}
 		return $this;
@@ -383,11 +391,6 @@ class Session
 		$special = ['cache_expire' => 1, 'cache_limiter' => 1, 'save_path' => 1, 'name' => 1];
 
 		foreach ($config as $key => $value) {
-			if (!strncmp($key, 'session.', 8)) { // back compatibility
-				$key = substr($key, 8);
-			}
-			$key = strtolower(preg_replace('#(.)(?=[A-Z])#', '$1_', $key));
-
 			if ($value === NULL || ini_get("session.$key") == $value) { // intentionally ==
 				continue;
 

@@ -2,42 +2,481 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c1794af-acb5-4fc2-acc2-bb7bf3370158" name="Default" comment="změna v Base presenteru">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/bootstrap-multiselect.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/bootstrap-multiselect.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/BasePresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/CsfdPresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/Error4xxPresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/ErrorPresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/HomepagePresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/PostPresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/SignPresenter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/@layout.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Csfd/find.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Error/403.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Error/404.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Error/405.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Error/410.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Error/4xx.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Error/500.phtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Homepage/default.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Post/create.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Post/edit.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Post/show.latte" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/presenters/templates/Sign/in.latte" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/BasePresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/BasePresenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/HomepagePresenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" afterPath="$PROJECT_DIR$/app/FrontModule/presenters/PostPresenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/templates/@layout.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/@layout.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/templates/Post/show.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Post/show.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/FrontModule/templates/Sign/in.latte" afterPath="$PROJECT_DIR$/app/FrontModule/templates/Sign/in.latte" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bootstrap.php" afterPath="$PROJECT_DIR$/app/bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/ArticleManager.php" afterPath="$PROJECT_DIR$/app/model/ArticleManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/model/TagsManager.php" afterPath="$PROJECT_DIR$/app/model/TagsManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/css/jquery.dataTables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/css/jquery.dataTables.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/css/jquery.dataTables_themeroller.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/AutoFill/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/AutoFill/css/dataTables.autoFill.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/AutoFill/css/dataTables.autoFill.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/AutoFill/img/filler.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/AutoFill/js/dataTables.autoFill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/AutoFill/js/dataTables.autoFill.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColReorder/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColReorder/css/dataTables.colReorder.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColReorder/css/dataTables.colReorder.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColReorder/img/insert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColReorder/js/dataTables.colReorder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColReorder/js/dataTables.colReorder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColVis/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColVis/css/dataTables.colVis.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColVis/css/dataTables.colVis.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColVis/css/dataTables.colvis.jqueryui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColVis/js/dataTables.colVis.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/ColVis/js/dataTables.colVis.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedColumns/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedColumns/css/dataTables.fixedColumns.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedColumns/css/dataTables.fixedColumns.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedColumns/js/dataTables.fixedColumns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedColumns/js/dataTables.fixedColumns.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedHeader/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedHeader/css/dataTables.fixedHeader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedHeader/css/dataTables.fixedHeader.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedHeader/js/dataTables.fixedHeader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/FixedHeader/js/dataTables.fixedHeader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/KeyTable/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/KeyTable/css/dataTables.keyTable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/KeyTable/css/dataTables.keyTable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/KeyTable/js/dataTables.keyTable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/KeyTable/js/dataTables.keyTable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Responsive/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Responsive/css/dataTables.responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Responsive/css/dataTables.responsive.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Responsive/js/dataTables.responsive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Responsive/js/dataTables.responsive.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Scroller/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Scroller/css/dataTables.scroller.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Scroller/css/dataTables.scroller.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Scroller/img/loading-background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Scroller/js/dataTables.scroller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/Scroller/js/dataTables.scroller.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/Readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/css/dataTables.tableTools.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/css/dataTables.tableTools.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/collection.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/collection_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/copy_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/csv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/csv_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/pdf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/pdf_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/print.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/print_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/psd/collection.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/psd/copy document.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/psd/file_types.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/psd/printer.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/xls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/img/xls_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/js/dataTables.tableTools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/js/dataTables.tableTools.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/swf/copy_csv_xls.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/extensions/TableTools/swf/copy_csv_xls_pdf.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/Sorting icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/back_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/back_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/back_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/forward_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/forward_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/forward_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/sort_asc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/sort_both.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/img/sort_desc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/js/ipub.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/js/jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/client-side/js/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Actions/Button.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Actions/IButton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Buttons/Button.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Buttons/IButton.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Action.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Column.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Email.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/IColumn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Link.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Number.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Status.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Columns/Text.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Control.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/IControl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/Settings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Components/template/default.latte" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DI/DataTablesExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DataSources/ArraySource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DataSources/DibiFluent.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DataSources/Doctrine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DataSources/IDataSource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DataSources/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/DataSources/NetteDatabase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/DuplicateColumnException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/DuplicateEditableColumnException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/DuplicateGlobalActionException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/DuplicateGlobalButtonException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/DuplicateRowButtonException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/IException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/InvalidArgumentException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/InvalidFilterException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/InvalidOrderException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/NoDataSourceException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/NoRowSelectedException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/NotSupportedException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/UnknownActionCallbackException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/UnknownActionException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/UnknownColumnException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Exceptions/UnknownFilterException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Check.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Condition.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Custom.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/DateRange.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/IFilter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Number.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Select.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/Filters/Text.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/StateSavers/IStateSaver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/ipub/data-tables/src/IPub/DataTables/StateSavers/StateSaver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/contributing.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/src/Tokenizer/TokenIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/src/Tokenizer/Tokenizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nette/tokenizer/src/Tokenizer/TokenizerException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/datetime.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/datetime.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/default.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/menu.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/param-placeholders.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/query-builder.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/result.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/doc/timezones-mysql-support.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Bridges/NetteDI/DbalExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Bridges/NetteTracy/BluescreenQueryPanel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Bridges/NetteTracy/ConnectionPanel.panel.phtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Bridges/NetteTracy/ConnectionPanel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Bridges/NetteTracy/ConnectionPanel.tab.phtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Connection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Drivers/IDriver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Drivers/IResultAdapter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Drivers/Mysqli/MysqliDriver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Drivers/Mysqli/MysqliResultAdapter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Drivers/Pgsql/PgsqlDriver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Drivers/Pgsql/PgsqlResultAdapter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/LazyHashMap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Platforms/CachedPlatform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Platforms/IPlatform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Platforms/MySqlPlatform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Platforms/PostgreSqlPlatform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/QueryBuilder/QueryBuilder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Result/Result.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Result/Row.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/SqlProcessor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Utils/DateTime.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Utils/FileImporter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Utils/PostgreArrayConverter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/Utils/Typos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/dbal/src/exceptions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/collection.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/conventions.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/default.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/entity.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/events.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/mapper.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/menu.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/migrate_2.0.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/model.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/relationships.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/repository.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/doc/stack.texy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Bridges/NetteDI/DependencyProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Bridges/NetteDI/OrmExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Bridges/NetteDI/OrmTestsExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Bridges/NetteDI/RepositoryLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/ArrayCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/Collection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/EmptyCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/EntityContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/EntityIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/Helpers/ArrayCollectionHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/Helpers/ConditionParserHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/Helpers/FetchPairsHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/ICollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/IEntityContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/IEntityIterator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Collection/IEntityPreloadContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/AbstractEntity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Entity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/IEntity.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/IProperty.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/IPropertyContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/IPropertyInjection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/EntityMetadata.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/IMetadataParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/IMetadataParserFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/MetadataParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/MetadataParserFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/MetadataValidator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/ModifierParser.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/PropertyMetadata.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/Reflection/PropertyRelationshipMetadata.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Entity/ToArrayConverter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/BaseMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/DbalCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/DbalMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/IPersistAutoupdateMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/QueryBuilderHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/RelationshipMapperManyHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/RelationshipMapperManyHasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/RelationshipMapperOneHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/RelationshipMapperOneHasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/StorageReflection/CamelCaseStorageReflection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/StorageReflection/IStorageReflection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/StorageReflection/StorageReflection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Dbal/StorageReflection/UnderscoredStorageReflection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/IMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/IRelationshipMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/IRelationshipMapperManyHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Mapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Memory/ArrayMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Memory/RelationshipMapperManyHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Memory/RelationshipMapperManyHasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Memory/RelationshipMapperOneHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Mapper/Memory/RelationshipMapperOneHasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Model/IModel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Model/IRepositoryLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Model/MetadataStorage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Model/Model.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Model/SimpleModelFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Model/SimpleRepositoryLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/HasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/HasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/IRelationshipCollection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/IRelationshipContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/ManyHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/ManyHasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/OneHasMany.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Relationships/OneHasOne.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Repository/IDependencyProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Repository/IRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Repository/IdentityMap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Repository/PersistenceHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Repository/RemovalHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/Repository/Repository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/StorageReflection/CommonReflection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/StorageReflection/IStorageReflection.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/StorageReflection/StringHelper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/TestHelper/EntityCreator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/TestHelper/TestCaseEntityTrait.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/TestHelper/TestMapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/nextras/orm/src/exceptions.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nette.iml" afterPath="$PROJECT_DIR$/.idea/nette.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/Compiler.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/Compiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/HtmlNode.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/HtmlNode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/MacroNode.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/MacroNode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/MacroTokens.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/MacroTokens.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/Parser.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/Parser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/PhpHelpers.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/PhpHelpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/PhpWriter.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/PhpWriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/TokenIterator.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/TokenIterator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/Tokenizer.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Compiler/Tokenizer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Engine.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Engine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Helpers.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Loaders/FileLoader.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Loaders/FileLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Macros/BlockMacros.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Macros/BlockMacros.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Macros/CoreMacros.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Macros/CoreMacros.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Runtime/FilterExecutor.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Runtime/FilterExecutor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Runtime/Filters.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Runtime/Filters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Runtime/Template.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/Runtime/Template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/exceptions.php" afterPath="$PROJECT_DIR$/vendor/latte/latte/src/Latte/exceptions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/application/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/Application.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/ErrorPresenter.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/ErrorPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/IPresenterFactory.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/IPresenterFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/MicroPresenter.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/MicroPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/PresenterFactory.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/PresenterFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/Responses/RedirectResponse.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/Responses/RedirectResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/Routers/CliRouter.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/Routers/CliRouter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/Routers/RouteList.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/Routers/RouteList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Component.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Component.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/ComponentReflection.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/ComponentReflection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Form.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/IStatePersistent.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/IStatePersistent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/ITemplate.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/ITemplate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/MethodReflection.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/MethodReflection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/UI/Presenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Application/exceptions.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Application/exceptions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationDI/ApplicationExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationDI/ApplicationExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/Loader.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/Loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/Template.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/Template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/TemplateFactory.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/TemplateFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/UIMacros.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/UIMacros.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/UIRuntime.php" afterPath="$PROJECT_DIR$/vendor/nette/application/src/Bridges/ApplicationLatte/UIRuntime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/bootstrap/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/bootstrap/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/bootstrap/src/Bootstrap/Configurator.php" afterPath="$PROJECT_DIR$/vendor/nette/bootstrap/src/Bootstrap/Configurator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/caching/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Bridges/CacheLatte/CacheMacro.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Bridges/CacheLatte/CacheMacro.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Cache.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/IBulkReader.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/IBulkReader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/IStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/IStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/OutputHelper.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/OutputHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/DevNullStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/DevNullStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/FileStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/FileStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/IJournal.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/IJournal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/MemcachedStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/MemcachedStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/MemoryStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/MemoryStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/NewMemcachedStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/NewMemcachedStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/SQLiteJournal.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/SQLiteJournal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/SQLiteStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/caching/src/Caching/Storages/SQLiteStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/database/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Bridges/DatabaseDI/DatabaseExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Bridges/DatabaseDI/DatabaseExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Connection.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/DriverException.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/DriverException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/MsSqlDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/MsSqlDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/MySqlDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/MySqlDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/OciDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/OciDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/OdbcDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/OdbcDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/PgSqlDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/PgSqlDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/SqliteDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/SqliteDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/SqlsrvDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Drivers/SqlsrvDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/IConventions.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/IConventions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/IRowContainer.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/IRowContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/IStructure.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/IStructure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/ISupplementalDriver.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/ISupplementalDriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Structure.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Structure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/ActiveRow.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/ActiveRow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/GroupedSelection.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/GroupedSelection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/IRow.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/IRow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/Selection.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/Selection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/SqlBuilder.php" afterPath="$PROJECT_DIR$/vendor/nette/database/src/Database/Table/SqlBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/di/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Compiler.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Compiler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/CompilerExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/CompilerExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Adapters/IniAdapter.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Adapters/IniAdapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Adapters/NeonAdapter.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Adapters/NeonAdapter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Helpers.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Loader.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Config/Loader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Container.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Container.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/ContainerBuilder.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/ContainerBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/ContainerLoader.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/ContainerLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/DependencyChecker.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/DependencyChecker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Extensions/ExtensionsExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Extensions/ExtensionsExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Extensions/InjectExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Extensions/InjectExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/Helpers.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/PhpGenerator.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/PhpGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/PhpReflection.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/PhpReflection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/di/src/DI/ServiceDefinition.php" afterPath="$PROJECT_DIR$/vendor/nette/di/src/DI/ServiceDefinition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Bridges/FormsLatte/Runtime.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Bridges/FormsLatte/Runtime.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Container.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Container.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/ControlGroup.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/ControlGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/BaseControl.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/BaseControl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/Button.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/Button.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/Checkbox.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/Checkbox.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/CheckboxList.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/CheckboxList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/CsrfProtection.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/CsrfProtection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/HiddenField.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/HiddenField.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/RadioList.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/RadioList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/SelectBox.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/SelectBox.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/SubmitButton.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/SubmitButton.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/TextArea.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/TextArea.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/TextBase.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/TextBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/TextInput.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/TextInput.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/UploadControl.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Controls/UploadControl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Form.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Helpers.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/IControl.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/IControl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/ISubmitterControl.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/ISubmitterControl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Rendering/DefaultFormRenderer.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Rendering/DefaultFormRenderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Rules.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Rules.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Validator.php" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/Forms/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/assets/netteForms.js" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/assets/netteForms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/forms/src/assets/netteForms.min.js" afterPath="$PROJECT_DIR$/vendor/nette/forms/src/assets/netteForms.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/http/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Bridges/HttpDI/HttpExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Bridges/HttpDI/HttpExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Bridges/HttpDI/SessionExtension.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Bridges/HttpDI/SessionExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/IRequest.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/IRequest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/IResponse.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/IResponse.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/Request.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/RequestFactory.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/RequestFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/Response.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/Response.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/Session.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/Session.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/SessionSection.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/SessionSection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/Url.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/Url.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/http/src/Http/UserStorage.php" afterPath="$PROJECT_DIR$/vendor/nette/http/src/Http/UserStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/mail/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/mail/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/FallbackMailer.php" afterPath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/FallbackMailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/Message.php" afterPath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/Message.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/MimePart.php" afterPath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/MimePart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/SendmailMailer.php" afterPath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/SendmailMailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/SmtpMailer.php" afterPath="$PROJECT_DIR$/vendor/nette/mail/src/Mail/SmtpMailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/ClassType.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/ClassType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Helpers.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Method.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Method.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Parameter.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Parameter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpFile.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpLiteral.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpLiteral.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpNamespace.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/PhpNamespace.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Property.php" afterPath="$PROJECT_DIR$/vendor/nette/php-generator/src/PhpGenerator/Property.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/reflection/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/reflection/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/AnnotationsParser.php" afterPath="$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/AnnotationsParser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/ClassType.php" afterPath="$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/ClassType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/Method.php" afterPath="$PROJECT_DIR$/vendor/nette/reflection/src/Reflection/Method.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/robot-loader/src/RobotLoader/RobotLoader.php" afterPath="$PROJECT_DIR$/vendor/nette/robot-loader/src/RobotLoader/RobotLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/composer.json" afterPath="$PROJECT_DIR$/vendor/nette/utils/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Arrays.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Arrays.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Callback.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Callback.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Html.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Image.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/ObjectMixin.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/ObjectMixin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/SmartObject.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/SmartObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Strings.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Strings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Validators.php" afterPath="$PROJECT_DIR$/vendor/nette/utils/src/Utils/Validators.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Bridges/Nette/TracyExtension.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Bridges/Nette/TracyExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Bar.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Bar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/BlueScreen.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/BlueScreen.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Debugger.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Debugger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Dumper.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Dumper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/FireLogger.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/FireLogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Helpers.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Logger.php" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/Logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/bar.css" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/bar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/bar.js" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/info.panel.phtml" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/info.panel.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/loader.phtml" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Bar/loader.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/BlueScreen/bluescreen.css" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/BlueScreen/bluescreen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/BlueScreen/bluescreen.js" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/BlueScreen/bluescreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/BlueScreen/page.phtml" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/BlueScreen/page.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Debugger/error.500.phtml" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Debugger/error.500.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Dumper/dumper.js" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Dumper/dumper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Toggle/toggle.css" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Toggle/toggle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Toggle/toggle.js" afterPath="$PROJECT_DIR$/vendor/tracy/tracy/src/Tracy/assets/Toggle/toggle.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,11 +503,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+            <state relative-caret-position="44">
+              <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -203,18 +642,14 @@
       <path value="$PROJECT_DIR$/vendor/nette/di" />
       <path value="$PROJECT_DIR$/vendor/nette/reflection" />
       <path value="$PROJECT_DIR$/vendor/nette/mail" />
-      <path value="$PROJECT_DIR$/vendor/ipub/data-tables" />
       <path value="$PROJECT_DIR$/vendor/ipub/visual-paginator" />
-      <path value="$PROJECT_DIR$/vendor/nextras/orm" />
-      <path value="$PROJECT_DIR$/vendor/nextras/dbal" />
-      <path value="$PROJECT_DIR$/vendor/nette/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/nextras/secured-links" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1932" />
+    <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -252,8 +687,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -276,12 +709,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filmy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filmy" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,6 +757,18 @@
       <recent name="C:\Users\Jarda\Dropbox\MAMP\htdocs\nette\app\FrontModule" />
       <recent name="C:\Users\Jarda\Dropbox\MAMP\htdocs\nette\www" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -444,7 +905,13 @@
       <workItem from="1489875046256" duration="4847000" />
       <workItem from="1491020846436" duration="14000" />
       <workItem from="1491656481548" duration="1749000" />
-      <workItem from="1491673291700" duration="166000" />
+      <workItem from="1491673291700" duration="1381000" />
+      <workItem from="1492714447559" duration="196000" />
+      <workItem from="1492715070435" duration="62000" />
+      <workItem from="1492715156428" duration="1311000" />
+      <workItem from="1493055132089" duration="19000" />
+      <workItem from="1493055559578" duration="632000" />
+      <workItem from="1493579238901" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="první commit">
       <created>1487444478206</created>
@@ -471,7 +938,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="464986000" />
+    <option name="totallyTimeSpent" value="469202000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -483,22 +950,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2628205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2244898" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6612022" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30393198" sideWeight="0.49570355" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="1.0" sideWeight="0.49570355" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33661202" sideWeight="0.49570355" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33661202" sideWeight="0.49570355" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61748636" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -520,6 +986,14 @@
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
               </option>
             </State>
           </value>
@@ -701,30 +1175,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/BasePresenter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <marker date="1489222194411" expanded="true" signature="35:97" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="102:172" ph=" Base presenter ..." />
-            <marker date="1489222194411" expanded="true" signature="222:2558" ph="{...}" />
-            <marker date="1489222194411" expanded="true" signature="317:1815" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1042:1069" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1090:1096" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1146:1786" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1203:1776" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1298:1438" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1504:1600" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1657:1762" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="1874:2159" ph="{...}" />
-            <marker date="1489222194411" expanded="true" signature="1981:2010" ph="..." />
-            <marker date="1489222194411" expanded="true" signature="2222:2435" ph="{...}" />
-            <marker date="1489222194411" expanded="true" signature="2443:2553" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Homepage/default.latte">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -757,22 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding>
-            <marker date="1489875646703" expanded="false" signature="9:84" ph=" Created by PhpStorm. ..." />
-            <marker date="1489875646703" expanded="true" signature="177:230" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="274:372" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="347:365" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="411:541" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="479:488" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="588:671" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="718:801" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="848:923" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="969:1104" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="1042:1051" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="1149:1287" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="1217:1230" ph="..." />
-            <marker date="1489875646703" expanded="true" signature="1253:1257" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,26 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="74" column="65" lean-forward="false" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
-          <folding>
-            <marker date="1487709890555" expanded="false" signature="8:77" ph="..." />
-            <marker date="1487709890555" expanded="false" signature="109:232" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="279:4029" ph="{...}" />
-            <marker date="1487709890555" expanded="true" signature="329:362" ph=" @var ArticleManager ..." />
-            <marker date="1487709890555" expanded="true" signature="402:436" ph=" @var CategoryManager ..." />
-            <marker date="1487709890555" expanded="true" signature="569:712" ph="{...}" />
-            <marker date="1487709890555" expanded="true" signature="784:2595" ph="{...}" />
-            <marker date="1487709890555" expanded="true" signature="1178:1249" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="1283:1338" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="1354:1403" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="2628:2953" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="2869:2896" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="2917:2923" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="2963:3089" ph=" @throws \Nette\Application\BadRequestException ..." />
-            <marker date="1487709890555" expanded="true" signature="3129:3561" ph="{...}" />
-            <marker date="1487709890555" expanded="true" signature="3182:3259" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="3341:3398" ph="..." />
-            <marker date="1487709890555" expanded="true" signature="3677:4026" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -814,15 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <marker date="1489878717915" expanded="true" signature="192:289" ph="..." />
-            <marker date="1489878717915" expanded="true" signature="237:282" ph="..." />
-            <marker date="1489878717915" expanded="true" signature="264:271" ph="..." />
-            <marker date="1489878717915" expanded="true" signature="436:968" ph="..." />
-            <marker date="1489878717915" expanded="true" signature="488:543" ph="..." />
-            <marker date="1489878717915" expanded="true" signature="571:616" ph="..." />
-            <marker date="1489878717915" expanded="true" signature="619:892" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,59 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
           <caret line="178" column="44" lean-forward="false" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
-          <folding>
-            <marker date="1489878938026" expanded="true" signature="157:175" ph=" @var ..." />
-            <marker date="1489878938026" expanded="true" signature="206:258" ph=" @var \App\Model\CommentManager @inject ..." />
-            <marker date="1489878938026" expanded="true" signature="296:345" ph=" @var \App\Model\TagsManager @inject ..." />
-            <marker date="1489878938026" expanded="true" signature="439:519" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="560:850" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="651:713" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="886:945" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="998:1541" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="1166:1196" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="1269:1284" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="1365:1389" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="1599:1975" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="1707:1871" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="1708:1870" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="2025:2992" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="2161:2185" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="2384:2402" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="2430:2449" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="2614:2643" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="2710:2741" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="3047:5071" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="3100:3199" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="3386:4389" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="3479:3720" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="3480:3719" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="4028:4136" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="4250:4323" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="4397:4913" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="4457:4698" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="4458:4697" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="4793:4901" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="5113:5739" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="5167:5216" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="5303:5365" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="5493:5731" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="5494:5730" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="5800:6993" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="5853:5902" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="5925:6985" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="6097:6974" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="6229:6616" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="6289:6543" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="6437:6521" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="6722:6959" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="6723:6958" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="7039:7265" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="7092:7141" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="7316:7523" ph="{...}" />
-            <marker date="1489878938026" expanded="true" signature="7369:7418" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="7460:7515" ph="..." />
-            <marker date="1489878938026" expanded="true" signature="7461:7514" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,15 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <marker date="1487428134607" expanded="true" signature="0:10" ph="p" />
-            <marker date="1487428134607" expanded="true" signature="14:22" ph="d" />
-            <marker date="1487428134607" expanded="true" signature="25:28" ph="d" />
-            <marker date="1487428134607" expanded="true" signature="30:65" ph="'" />
-            <marker date="1487428134607" expanded="true" signature="67:71" ph="u" />
-            <marker date="1487428134607" expanded="true" signature="73:77" ph="r" />
-            <marker date="1487428134607" expanded="true" signature="79:87" ph="p" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,10 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484557614483" expanded="false" signature="9:141" ph=" Obecné funkce , které fungují napříč celým projektem ..." />
-            <marker date="1484557614483" expanded="true" signature="203:248" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,13 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-          <folding>
-            <marker date="1489864772509" expanded="true" signature="524:531" ph="..." />
-            <marker date="1489864772509" expanded="true" signature="751:821" ph="..." />
-            <marker date="1489864772509" expanded="true" signature="829:904" ph="..." />
-            <marker date="1489864772509" expanded="true" signature="907:1114" ph="//..." />
-            <marker date="1489864772509" expanded="true" signature="1117:1815" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,16 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1483818055683" expanded="true" signature="0:10" ph="p" />
-            <marker date="1483818055683" expanded="true" signature="14:22" ph="d" />
-            <marker date="1483818055683" expanded="true" signature="25:28" ph="d" />
-            <marker date="1483818055683" expanded="true" signature="30:73" ph="'" />
-            <marker date="1483818055683" expanded="true" signature="75:79" ph="u" />
-            <marker date="1483818055683" expanded="true" signature="81:94" ph="s" />
-            <marker date="1483818055683" expanded="true" signature="96:104" ph="p" />
-            <marker date="1483818055683" expanded="true" signature="106:114" ph="o" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,40 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <marker date="1487494952258" expanded="true" signature="0:10" ph="p" />
-            <marker date="1487494952258" expanded="true" signature="14:25" ph="a" />
-            <marker date="1487494952258" expanded="true" signature="28:42" ph="e" />
-            <marker date="1487494952258" expanded="true" signature="44:56" ph="F" />
-            <marker date="1487494952258" expanded="true" signature="57:64" ph="s" />
-            <marker date="1487494952258" expanded="true" signature="67:77" ph="e" />
-            <marker date="1487494952258" expanded="true" signature="79:88" ph="1" />
-            <marker date="1487494952258" expanded="true" signature="89:97" ph="s" />
-            <marker date="1487494952258" expanded="true" signature="100:106" ph="r" />
-            <marker date="1487494952258" expanded="true" signature="108:139" ph="A" />
-            <marker date="1487494952258" expanded="true" signature="143:167" ph="A" />
-            <marker date="1487494952258" expanded="true" signature="171:196" ph="A" />
-            <marker date="1487494952258" expanded="true" signature="200:224" ph="A" />
-            <marker date="1487494952258" expanded="true" signature="228:250" ph="A" />
-            <marker date="1487494952258" expanded="true" signature="251:259" ph="s" />
-            <marker date="1487494952258" expanded="true" signature="265:270" ph="u" />
-            <marker date="1487494952258" expanded="true" signature="280:285" ph="a" />
-            <marker date="1487494952258" expanded="true" signature="287:337" ph="k" />
-            <marker date="1487494952258" expanded="true" signature="338:343" ph="t" />
-            <marker date="1487494952258" expanded="true" signature="349:354" ph="e" />
-            <marker date="1487494952258" expanded="true" signature="356:385" ph="j" />
-            <marker date="1487494952258" expanded="true" signature="386:396" ph="e" />
-            <marker date="1487494952258" expanded="true" signature="402:417" ph="v" />
-            <marker date="1487494952258" expanded="true" signature="419:467" ph="I" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,18 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="32" lean-forward="true" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding>
-            <marker date="1491656706189" expanded="true" signature="0:718" ph="{&quot;name&quot;: &quot;nette/web-project&quot;...}" />
-            <marker date="1491656706189" expanded="true" signature="170:637" ph="{&quot;php&quot;: &quot;&gt;= 5.6&quot;...}" />
-            <marker date="1491656706189" expanded="true" signature="655:684" ph="{&quot;nette/tester&quot;: &quot;^1.6&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1039,10 +1315,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/BasePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
           <folding />
         </state>
       </provider>

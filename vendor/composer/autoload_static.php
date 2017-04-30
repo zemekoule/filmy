@@ -14,21 +14,11 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
     public static $prefixLengthsPsr4 = array (
         'N' => 
         array (
-            'Nextras\\Orm\\' => 12,
-            'Nextras\\Dbal\\' => 13,
             'Nextras\\Application\\UI\\' => 23,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Nextras\\Orm\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nextras/orm/src',
-        ),
-        'Nextras\\Dbal\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nextras/dbal/src',
-        ),
         'Nextras\\Application\\UI\\' => 
         array (
             0 => __DIR__ . '/..' . '/nextras/secured-links/src',
@@ -41,10 +31,6 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
             'IPub\\VisualPaginator\\' => 
             array (
                 0 => __DIR__ . '/..' . '/ipub/visual-paginator/src',
-            ),
-            'IPub\\DataTables\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/ipub/data-tables/src',
             ),
         ),
     );
@@ -305,6 +291,10 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Object' => __DIR__ . '/..' . '/nette/utils/src/Utils/Object.php',
         'Nette\\OutOfRangeException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\PhpGenerator\\ClassType' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/ClassType.php',
+        'Nette\\PhpGenerator\\Closure' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Closure.php',
+        'Nette\\PhpGenerator\\Constant' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Constant.php',
+        'Nette\\PhpGenerator\\Factory' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Factory.php',
+        'Nette\\PhpGenerator\\GlobalFunction' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/GlobalFunction.php',
         'Nette\\PhpGenerator\\Helpers' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Helpers.php',
         'Nette\\PhpGenerator\\Method' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Method.php',
         'Nette\\PhpGenerator\\Parameter' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Parameter.php',
@@ -312,6 +302,10 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\PhpGenerator\\PhpLiteral' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/PhpLiteral.php',
         'Nette\\PhpGenerator\\PhpNamespace' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/PhpNamespace.php',
         'Nette\\PhpGenerator\\Property' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Property.php',
+        'Nette\\PhpGenerator\\Traits\\CommentAware' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Traits/CommentAware.php',
+        'Nette\\PhpGenerator\\Traits\\FunctionLike' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Traits/FunctionLike.php',
+        'Nette\\PhpGenerator\\Traits\\NameAware' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Traits/NameAware.php',
+        'Nette\\PhpGenerator\\Traits\\VisibilityAware' => __DIR__ . '/..' . '/nette/php-generator/src/PhpGenerator/Traits/VisibilityAware.php',
         'Nette\\Reflection\\Annotation' => __DIR__ . '/..' . '/nette/reflection/src/Reflection/Annotation.php',
         'Nette\\Reflection\\AnnotationsParser' => __DIR__ . '/..' . '/nette/reflection/src/Reflection/AnnotationsParser.php',
         'Nette\\Reflection\\ClassType' => __DIR__ . '/..' . '/nette/reflection/src/Reflection/ClassType.php',
@@ -355,38 +349,11 @@ class ComposerStaticInit091ed5d24b4127ffc48411e34be2086f
         'Nette\\Utils\\ObjectMixin' => __DIR__ . '/..' . '/nette/utils/src/Utils/ObjectMixin.php',
         'Nette\\Utils\\Paginator' => __DIR__ . '/..' . '/nette/utils/src/Utils/Paginator.php',
         'Nette\\Utils\\Random' => __DIR__ . '/..' . '/nette/utils/src/Utils/Random.php',
+        'Nette\\Utils\\Reflection' => __DIR__ . '/..' . '/nette/utils/src/Utils/Reflection.php',
         'Nette\\Utils\\RegexpException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\Utils\\Strings' => __DIR__ . '/..' . '/nette/utils/src/Utils/Strings.php',
-        'Nette\\Utils\\TokenIterator' => __DIR__ . '/..' . '/nette/tokenizer/src/Tokenizer/TokenIterator.php',
-        'Nette\\Utils\\Tokenizer' => __DIR__ . '/..' . '/nette/tokenizer/src/Tokenizer/Tokenizer.php',
-        'Nette\\Utils\\TokenizerException' => __DIR__ . '/..' . '/nette/tokenizer/src/Tokenizer/TokenizerException.php',
         'Nette\\Utils\\UnknownImageFileException' => __DIR__ . '/..' . '/nette/utils/src/Utils/exceptions.php',
         'Nette\\Utils\\Validators' => __DIR__ . '/..' . '/nette/utils/src/Utils/Validators.php',
-        'Nextras\\Dbal\\ConnectionException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\ConstraintViolationException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\DriverException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\ForeignKeyConstraintViolationException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\IOException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\InvalidArgumentException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\InvalidStateException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\NotImplementedException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\NotNullConstraintViolationException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\NotSupportedException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\QueryException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Dbal\\UniqueConstraintViolationException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
-        'Nextras\\Orm\\IOException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\InvalidArgumentException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\InvalidModifierDefinitionException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\InvalidStateException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\LogicException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\MemberAccessException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\NotImplementedException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\NotSupportedException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\NullValueException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'Nextras\\Orm\\RuntimeException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
-        'SimpleHtmlDomDumper' => __DIR__ . '/..' . '/anastaszor/simple-html-dom/src/SimpleHtmlDomDumper.php',
-        'SimpleHtmlDomException' => __DIR__ . '/..' . '/anastaszor/simple-html-dom/src/SimpleHtmlDomException.php',
-        'SimpleHtmlDomFactory' => __DIR__ . '/..' . '/anastaszor/simple-html-dom/src/SimpleHtmlDomFactory.php',
         'Tester\\Assert' => __DIR__ . '/..' . '/nette/tester/src/Framework/Assert.php',
         'Tester\\AssertException' => __DIR__ . '/..' . '/nette/tester/src/Framework/AssertException.php',
         'Tester\\CodeCoverage\\Collector' => __DIR__ . '/..' . '/nette/tester/src/CodeCoverage/Collector.php',
