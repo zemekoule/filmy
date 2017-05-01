@@ -4,3 +4,4 @@ www/css/bootstrap-multiselect.css
 www/js/bootstrap-multiselect.js
 !.gitignore
 app/AdminModule/
+.idea/
