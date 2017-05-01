@@ -8,10 +8,8 @@
 
 namespace App\Model;
 
-class CommentManager extends Manager
-{
-    public function CommentDelete($id)
-    {
+class CommentManager extends Manager {
+    public function CommentDelete($id) {
         return $this->connection->table('comments')
             ->where('id',$id)
             ->limit(1)

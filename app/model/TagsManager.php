@@ -9,8 +9,7 @@
 namespace App\Model;
 
 
-class TagsManager extends Manager
-{
+class TagsManager extends Manager {
     public function getTags(){
         return $this->connection->table('tag');
     }

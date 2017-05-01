@@ -8,13 +8,10 @@
 
 namespace App\Model;
 
-class CategoryManager extends Manager
-{
-    public function getCategories()
-    {
+class CategoryManager extends Manager {
+    public function getCategories() {
         return $this->connection->table('category')
             ->order('id')
             ->order('name');
     }
-
 }
