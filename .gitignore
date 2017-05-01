@@ -3,3 +3,4 @@ app/config/config.local.neon
 www/css/bootstrap-multiselect.css
 www/js/bootstrap-multiselect.js
 !.gitignore
+app/AdminModule/
